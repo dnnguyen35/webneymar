@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: sans-serif;
+
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.tieude{
+    text-align: center;
+    margin: 20px 0;
+}
+h2{
+    color:black;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+ul.danhsachsanpham {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+ul.danhsachsanpham li{
+    flex-basis: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    
+}
+ul.danhsachsanpham li .anhsanpham{
+    position: relative;
+    overflow: hidden;
+}
+ul.danhsachsanpham li img{
+    width: 100%;
+    height: auto;
+    transition-duration:0.25s;
+}
+ul.danhsachsanpham li .thongtin{
+    padding: 10px 0px;
+    text-align: center;
+}
+ul.danhsachsanpham li .sanpham .anhsanpham{
+    display:block;
+}
+ul.danhsachsanpham li .sanpham .anhsanpham img{
+    display:block;
+}
+ul.danhsachsanpham li:hover .sanpham .anhsanpham img{
+    transform: scale(1.1);
+
+}
+ul.danhsachsanpham li .sanpham a.muangay{
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    background-color: aqua;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom:-38.67px;
+    transition: 0.20s ease-in-out;
+    opacity: 75%;
+}
+ul.danhsachsanpham li:hover a.muangay{
+    bottom:0px;
+}
+
+ul.danhsachsanpham li .thongtin a{
+    display:block;
+    text-decoration: none;
+}
+ul.danhsachsanpham li .thongtin a.ten{
+    font-size: 12px;
+    color:blueviolet;
+    text-transform: uppercase;
+    padding: 2px 0px;
+}
+ul.danhsachsanpham li .thongtin a.danhhieu{
+    color: blueviolet;
+    text-transform: uppercase;
+    padding:2px 0px;
+}
+ul.danhsachsanpham li .thongtin a.giatien{
+    font-weight: 700;
+    padding:2px 0px;
+}
